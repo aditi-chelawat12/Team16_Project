@@ -13,10 +13,6 @@
 # limitations under the License.
 # [START cloudbuild_maven]
 steps:
-  - name: gcr.io/cloud-builders/gcloud:latest
-    entrypoint: "ls"
-    args: ["-lah","/workspace"]
-  
   - name: maven:3-jdk-8
     entrypoint: mvn
     dir: 'java-api'
