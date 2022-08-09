@@ -15,7 +15,7 @@
 steps:
 - name: gcr.io/cloud-builders/gcloud:latest
   entrypoint: "ls"
-  args: ["-lah","/workspace"]
+  args: ["-lah","/java-api"]
   
   - name: maven:3-jdk-8
     entrypoint: mvn
